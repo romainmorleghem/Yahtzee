@@ -3,7 +3,7 @@
 Un Yahtzee 1 contre 1 jouable dans le navigateur, face à une IA entraînée en Python puis portée en JavaScript.
 Ce dépôt contient le **site** (à jouer) et la **démarche** (pour comprendre comment l'IA a été construite).
 
-👉 **Jouer :** `https://TON-PSEUDO.github.io/NOM-DU-DEPOT/` *(à remplacer par ton lien)*
+👉 **Jouer :** `https://romainmorleghem.github.io/Yahtzee/`
 
 ---
 
