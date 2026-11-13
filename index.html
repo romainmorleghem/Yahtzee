@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yahtzee – contre un réseau de neurones</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎲 Yahtzee <small>face à un réseau de neurones</small></h1>
+  <div class="ctl">
+    <label>Adversaire
+      <select id="mode"><option value="win">IA · mode Win (vise la victoire)</option><option value="score">IA · mode Score (maximise les points)</option></select></label>
+    <label>Premier
+      <select id="first"><option value="r">Au hasard</option><option value="0">Toi</option><option value="1">L'IA</option></select></label>
+    <label>Vitesse IA
+      <select id="speed"><option value="1.7">Lente</option><option value="1" selected>Normale</option><option value="0.45">Rapide</option></select></label>
+    <button id="new">Nouvelle partie</button>
+  </div>
+</header>
+<main>
+  <section class="board">
+    <div id="msg">Chargement…</div>
+    <div id="dice"></div>
+    <button id="roll">Lancer les dés</button>
+    <div class="hint">Après un lancer, clique sur un dé pour le <b>garder</b>, puis relance ou choisis une case dans la feuille.</div>
+    <ul id="log"></ul>
+  </section>
+  <aside><table id="card"></table></aside>
+</main>
+<div id="end" class="modal" hidden><div class="box"><h2 id="endTitle"></h2><p id="endText"></p><button id="again">Rejouer</button></div></div>
+<script src="weights.js"></script>
+<script src="ai.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
